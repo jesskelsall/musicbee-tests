@@ -1,0 +1,50 @@
+{
+  "name": "musicbee-tests",
+  "version": "0.1.0",
+  "description": "A suite of unit tests for organising and cleaning up my MusicBee library",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf dist/",
+    "build": "npm run clean && tsc",
+    "lint": "tslint -c tslint.json -p tsconfig.json 'src/**/*.ts'",
+    "start": "node ./dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesskelsall/musicbee-tests.git"
+  },
+  "keywords": [
+    "typescript",
+    "chai",
+    "musicbee"
+  ],
+  "author": "Jessica Kelsall",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/jesskelsall/musicbee-tests/issues"
+  },
+  "homepage": "https://github.com/jesskelsall/musicbee-tests#readme",
+  "devDependencies": {
+    "@types/chai": "^4.0.4",
+    "@types/chalk": "^0.4.31",
+    "@types/inquirer": "0.0.35",
+    "@types/mocha": "^2.2.43",
+    "@types/node": "^8.0.28",
+    "@types/pluralize": "0.0.27",
+    "reflect-metadata": "^0.1.10",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.7.0",
+    "tslint-eslint-rules": "^4.1.1",
+    "tslint-no-unused-expression-chai": "0.0.2",
+    "typescript": "^2.5.2"
+  },
+  "dependencies": {
+    "ap-style-title-case": "^1.0.1",
+    "chai": "^4.1.2",
+    "chalk": "^2.1.0",
+    "inquirer": "^3.3.0",
+    "mocha": "^3.5.2",
+    "pluralize": "^7.0.0"
+  }
+}

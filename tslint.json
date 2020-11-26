@@ -1,0 +1,22 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended",
+    "tslint-eslint-rules"
+  ],
+  "jsRules": {},
+  "rules": {
+    "interface-name": [true, "never-prefix"],
+    "no-unused-expression": false,
+    "no-unused-expression-chai": true,
+    "object-curly-spacing": [true, "always"],
+    "object-literal-sort-keys": false,
+    "ter-indent": [true, 2, {
+      "SwitchCase": 1
+    }],
+    "variable-name": [true, "check-format", "allow-leading-underscore"]
+  },
+  "rulesDirectory": [
+    "node_modules/tslint-no-unused-expression-chai/rules"
+  ]
+}
